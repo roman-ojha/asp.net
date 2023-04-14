@@ -1,0 +1,5 @@
+*) .NET Core Runtime:
+    -> To run .NET Core application
+*) .NET core SDK:
+    -> Software development kit
+    -> to develop .NET Core application
