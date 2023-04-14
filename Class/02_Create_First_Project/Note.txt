@@ -1,0 +1,6 @@
+*) Create Project using dotnet cli:
+    -> dotnet new (to see all the template name, tags to create dotnet app)
+    -> dotnet new <template_name>
+    *) Create ASP.NET Core MVC:
+        -> dotnet new mvc --name <app_name>
+        -> dotnet run (to run the application)
