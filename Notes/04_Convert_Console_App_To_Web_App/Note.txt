@@ -3,3 +3,6 @@
     2. Remove Output type from csproj file
     3. Add new WebHostBuilder:
         -> At this point of time of using the application the resources like 'Dependency Injection', 'Logging', 'Configuration', 'IHostedService Implementation' are being used automatically by the application
+        -> So we will now CreateDefaultBuild inside './Converted_Web_App/Program.cs'
+    4. Add Routing:
+        -> And inside './Converted_Web_App/Startup.cs' we will define the route that we use for the application

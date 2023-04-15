@@ -1,5 +1,6 @@
 ﻿using Converted_Web_App;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Hosting;
 using System;
 
 namespace ConvertedWebApp
@@ -12,7 +13,6 @@ namespace ConvertedWebApp
         // and that main method is the entry point for any .NET Core application
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
             // We will call the HostBuild while starting of the application
             // Where we can pass some command line arguments as well
             CreateHostBuilder(args).Build().Run();
