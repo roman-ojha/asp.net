@@ -1,0 +1,15 @@
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\bin\Debug\net7.0\ConsoleApp.exe
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\bin\Debug\net7.0\ConsoleApp.deps.json
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\bin\Debug\net7.0\ConsoleApp.runtimeconfig.json
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\bin\Debug\net7.0\ConsoleApp.dll
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\bin\Debug\net7.0\ConsoleApp.pdb
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.csproj.AssemblyReference.cache
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.AssemblyInfoInputs.cache
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.AssemblyInfo.cs
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.csproj.CoreCompileInputs.cache
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.dll
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\refint\ConsoleApp.dll
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.pdb
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ConsoleApp.genruntimeconfig.cache
+D:\Programming\Csharp\Asp.Net\Notes\04_Convert_Console_App_To_Web_App\ConsoleApp\obj\Debug\net7.0\ref\ConsoleApp.dll
