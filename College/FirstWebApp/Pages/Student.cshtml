@@ -1,0 +1,38 @@
+@page 
+@* This directive specifies that the file is a Razor Page. Razor Pages is a feature in ASP.NET Core that allows you to define web pages with a combination of HTML and C# code. *@
+@model StudentModel
+@* This directive specifies the model class associated with the page. It indicates that the page expects a model object of type StudentModel to be passed to it. *@
+@{
+ViewData["Title"] = "Student";
+@* This is a code block in C#. Within this block, you can write C# code to perform various operations. In this case, it is used to set the value of the ViewData dictionary. ViewData is a dictionary that allows you to pass data between the controller and the view. Here, the "Title" key of ViewData is set to "Student", which can be accessed in the view to set the page title or perform other operations based on this value. *@
+ViewData["Name"]="Roman Ojha";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Ojha</title>
+</head>
+<body>
+  <h1>@ViewData["Name"]</h1>
+  <form method="post">
+    <div>
+      <label asp-for="Num1"></label>
+      <input placeholder="Number 1" asp-for="Num1" />
+      <span asp-validation-for="Num1" class="text-denger"></span>
+    </div>
+    <div>
+      <label asp-for="Num1"></label>
+      <input placeholder="Number 2" asp-for="Num2" />
+      <span asp-validation-for="Num2" class="text-denger"></span>
+    </div>
+    <input type="submit" name="Submit" value="Add" />
+    @Model.Sum
+    <img src="~/assets/images/windows.jpg" width="200px" height="200px"/>
+  </form>
+
+</body>
+</html>
