@@ -1,0 +1,71 @@
+@page
+@model AssignmentQ2
+@{
+    ViewData["Title"] = "Assignment Q1";
+}
+
+<h4>Q2) Wap to add any five Student name and photo and display in ASP.NET Core with validation.</h4>
+<form method="POST" enctype="multipart/form-data" style="border:1px solid black;">
+    <div style="margin-bottom: 10px;border: 1px solid blue;width: fit-content;">
+        <div>
+            <label asp-for="Names[0]"></label>
+            <input asp-for="Names[0]">
+        </div>
+        <div>
+            <label for="file">Photo: </label>
+            <input  type="file" name="file"/>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px;border: 1px solid blue;width: fit-content;">
+        <div>
+            <label asp-for="Names[1]"></label>
+            <input asp-for="Names[1]">
+        </div>
+        <div>
+            <label for="file">Photo: </label>
+            <input  type="file" name="file"/>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px;border: 1px solid blue;width: fit-content;">
+        <div>
+            <label asp-for="Names[2]"></label>
+            <input asp-for="Names[2]">
+        </div>
+        <div>
+            <label for="file">Photo: </label>
+            <input  type="file" name="file"/>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px;border: 1px solid blue;width: fit-content;">
+        <div>
+            <label asp-for="Names[3]"></label>
+            <input asp-for="Names[3]">
+        </div>
+        <div>
+            <label for="file">Photo: </label>
+            <input  type="file" name="file"/>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px;border: 1px solid blue;width: fit-content;">
+        <div>
+            <label asp-for="Names[4]"></label>
+            <input asp-for="Names[4]">
+        </div>
+        <div>
+            <label for="file">Photo: </label>
+            <input  type="file" name="file"/>
+        </div>
+    </div>
+    <input type="submit" value="Add">
+</form>
+    <h2>Student Data:</h2>
+    <div style="border:1px solid black">
+    @if(@Model.Users.Count > 0){
+        foreach(var user in Model.Users){
+            <div style="border:1px solid blue;">
+                <h1 style="display:inline-block; margin-right:50px;">Name: @user.Name</h1>
+                <img src="~/assets/files/@user.PhotoName" width="100px" height="100px"/>
+            </div>
+        }
+    }
+    </div>

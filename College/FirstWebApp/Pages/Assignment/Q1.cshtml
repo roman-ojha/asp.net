@@ -18,8 +18,10 @@
         <input type="submit" name="multiply" value="Multiply"/>
         <input type="submit" name="divide" value="Divide"/>
     </div>
+    @* If else statement *@
     @if(@Model.CurrentOperation == "Sum")
     {
+    @* Access model Properties *@
         <h3>Sum: @Model.Sum</h3>
     }
     else if(@Model.CurrentOperation == "Subtract"){
