@@ -1,0 +1,34 @@
+@page
+@model AssignmentQ1 
+@{
+    ViewData["Title"] = "Assignment Q1";
+}
+
+<h4>Q1) Wap to add, subtract, multiply & division of any two number in ASP.NET Core with validation</h4>
+<form method="post">
+    <div>
+        <label asp-for="Number1"></label>
+        <input placeholder="Enter Number 1" asp-for="Number1"/>
+        <label asp-for="Number2"></label>
+        <input placeholder="Enter Number 2" asp-for="Number2"/>
+    </div>
+    <div style="margin-top:20px;">
+        <input type="submit" name="add" value="Add"/>
+        <input type="submit" name="subtract" value="Subtract"/>
+        <input type="submit" name="multiply" value="Multiply"/>
+        <input type="submit" name="divide" value="Divide"/>
+    </div>
+    @if(@Model.CurrentOperation == "Sum")
+    {
+        <h3>Sum: @Model.Sum</h3>
+    }
+    else if(@Model.CurrentOperation == "Subtract"){
+        <h3>Subtract: @Model.Subtract</h3>
+    }
+    else if(@Model.CurrentOperation == "Multiply"){
+        <h3>Multiply: @Model.Multiply</h3>
+    }
+    else if (@Model.CurrentOperation == "Divide"){
+        <h3>Divide: @Model.Divide</h3>
+    }
+</form>

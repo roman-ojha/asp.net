@@ -8,31 +8,19 @@ ViewData["Title"] = "Student";
 ViewData["Name"]="Roman Ojha";
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roman Ojha</title>
-</head>
-<body>
-  <h1>@ViewData["Name"]</h1>
-  <form method="post">
-    <div>
-      <label asp-for="Num1"></label>
-      <input placeholder="Number 1" asp-for="Num1" />
-      <span asp-validation-for="Num1" class="text-denger"></span>
-    </div>
-    <div>
-      <label asp-for="Num1"></label>
-      <input placeholder="Number 2" asp-for="Num2" />
-      <span asp-validation-for="Num2" class="text-denger"></span>
-    </div>
-    <input type="submit" name="Submit" value="Add" />
-    @Model.Sum
-    <img src="~/assets/images/windows.jpg" width="200px" height="200px"/>
-  </form>
-
-</body>
-</html>
+<h1>@ViewData["Name"]</h1>
+<form method="post">
+  <div>
+    <label asp-for="Num1"></label>
+    <input placeholder="Number 1" asp-for="Num1" />
+    <span asp-validation-for="Num1" class="text-denger"></span>
+  </div>
+  <div>
+    <label asp-for="Num1"></label>
+    <input placeholder="Number 2" asp-for="Num2" />
+    <span asp-validation-for="Num2" class="text-denger"></span>
+  </div>
+  <input type="submit" name="Submit" value="Add" />
+  @Model.Sum
+  <img src="~/assets/images/windows.jpg" width="200px" height="200px"/>
+</form>
