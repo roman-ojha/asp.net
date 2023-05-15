@@ -1,0 +1,11 @@
+@page
+@model MySQLCRUD.Pages.Users.CreateModel
+@{
+
+}
+
+<form method="post">
+    Username <input asp-for="UserInfo.UserName" class="form-control"/>
+    Password <input asp-for="UserInfo.Password" class="form-control"/>
+    <input type="submit" value="Save" class="btn btn-primary"/>
+</form>
