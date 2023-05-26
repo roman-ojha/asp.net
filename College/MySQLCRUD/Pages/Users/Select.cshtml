@@ -1,0 +1,19 @@
+@page
+@model MySQLCRUD.Pages.Users.SelectModel
+@{
+
+}
+
+<h1>User List</h1>
+<table class="table">
+    <tr>
+        <td>Username</td>
+        <td>Password</td>
+    </tr>
+    @foreach(var item in Model.listUsers){
+        <tr>
+            <td>@item.UserName</td>
+            <td>@item.Password</td>
+        </tr>
+    }
+</table>

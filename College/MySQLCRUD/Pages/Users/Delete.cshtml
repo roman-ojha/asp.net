@@ -1,0 +1,25 @@
+@page
+@model MySQLCRUD.Pages.Users.DeleteModel
+@{
+
+}
+
+<h1>User List</h1>
+<table class="table">
+    <tr>
+        <td>Username</td>
+        <td>Password</td>
+    </tr>
+    @foreach(var item in Model.listUsers){
+        <tr>
+            <td>@item.UserName</td>
+            <td>@item.Password</td>
+            <td>
+                <form method="post">
+                        <input type="hidden" value="@item.UserName" asp-for="id"/>
+                        <input type="submit" value="Delete" class="btn btn-primary"/>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
