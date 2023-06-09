@@ -1,0 +1,30 @@
+﻿@page
+@model JqueryValidation.Pages.ValidationModel
+@{
+}
+
+ <form id="form" name="myvalidation" method="post">
+     Username <input type="text" name="txtUser"/>
+     Password <input type="password" name="txtPass"/>
+     <input type="submit" value="Save"/>
+ </form>
+
+
+<script>
+    $(document).ready(function () {
+        $("form[name='myvalidation']").validate({
+        // $("#form").validate({
+            rules: {
+                txtUser: "required",
+                txtPass: "required",
+            },
+            messages: {
+                txtUser: "Username is requried",
+                txtPass: "Password is required",
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+    })
+</script>
