@@ -1,0 +1,60 @@
+﻿@page
+@model JaqueryValidation.Pages.Users.LoginModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm" action="#" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <span id="usernameError" class="error"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+          $('#loginForm').submit(function(e) {
+            e.preventDefault(); // Prevent form submission
+
+            // Reset error messages
+            $('.error').text('');
+
+            // Perform form validation
+            var username = $('#username').val();
+            var password = $('#password').val();
+            var isValid = true;
+
+            if (username === '') {
+              $('#usernameError').text('Username is required');
+              isValid = false;
+            }
+
+            if (password === '') {
+              $('#passwordError').text('Password is required');
+              isValid = false;
+            }
+
+            if (isValid) {
+              // Perform login logic here
+              alert('Login successful');
+            }
+          });
+        });
+    </script>
+</body>
+</html>
+

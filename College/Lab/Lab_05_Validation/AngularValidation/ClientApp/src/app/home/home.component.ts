@@ -8,6 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class HomeComponent {
   loginForm: FormGroup;
   formSubmitted = false;
+  username: string = "";
+  password: string = "";
 
   constructor(private formBuilder: FormBuilder) {
     this.loginForm = this.formBuilder.group({
@@ -21,9 +23,8 @@ export class HomeComponent {
     if (this.loginForm.invalid) {
       return;
     }
-    // Perform login logic here
+
     window.alert('Login successful');
-    // Reset the form after successful login
-    this.loginForm.reset();
   }
 }
+
