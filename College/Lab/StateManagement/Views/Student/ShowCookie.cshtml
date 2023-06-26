@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Microsoft.AspNetCore.Http;
+@{
+    var request = Context.Request;
+    string firstName = request.Cookies["FirstName"];
+    string lastName = request.Cookies["LastName"];
+    string email = request.Cookies["Email"];
+}
+
+<h1>Student Data from Cookie:</h1>
+<p>First Name: @firstName</p>
+<p>Last Name: @lastName</p>
+<p>Email: @email</p>
