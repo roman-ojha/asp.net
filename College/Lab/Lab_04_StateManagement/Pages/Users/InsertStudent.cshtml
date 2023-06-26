@@ -1,0 +1,14 @@
+﻿@page
+@model Lab_04_StateManagement.Pages.Users.InsertStudentModel
+@{
+}
+
+<form method="post">
+    <label for="fname"> First Name: </label>
+    <input id="fname" type="text" placeholder="FirstName" asp-for="FirstName"/><br/>
+    <label for="lname"> Last Name: </label>
+    <input id="lname" type="text" placeholder="LastName" asp-for="LastName"/><br/>
+    <label for="email"> Email: </label>
+    <input id="email" type="text" placeholder="Email" asp-for="Email"/><br/>
+    <input type="submit" value="Insert"/>
+</form>
