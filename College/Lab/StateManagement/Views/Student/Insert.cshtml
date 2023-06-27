@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Insert";
+}
+
+<form method="post" action="/Student/StoreStudent">
+    <label for="fname"> First Name: </label>
+    <input id="fname" name="fname" type="text" placeholder="FirstName"/><br />
+    <label for="lname"> Last Name: </label>
+    <input id="lname" name="lname" type="text" placeholder="LastName"/><br />
+    <label for="email"> Email: </label>
+    <input id="email" name="email" type="text" placeholder="Email"/><br />
+    <label>Choose From Following:</label><br/>
+    <label for="session">Session</label>
+    <input id="session" type="radio" name="store_into" value="session"/><br/>
+    <label for="cookie">Cookie</label>
+    <input id="cookie" type="radio" name="store_into" value="cookie"/><br/>
+    <label for="query-string">Query String</label>
+    <input id="query-string" type="radio" name="store_into" value="query_string"/><br/>
+    <label for="view-data">View Data</label>
+    <input id="view-data" type="radio" name="store_into" value="view_data"/><br/>
+    <input type="submit" value="Insert" />
+ 
+</form>
+
