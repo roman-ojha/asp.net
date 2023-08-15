@@ -1,7 +1,11 @@
+using ExamPracticeMVC.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Injecting New Service
+builder.Services.AddSingleton<ILog, Log>();
 
 var app = builder.Build();
 

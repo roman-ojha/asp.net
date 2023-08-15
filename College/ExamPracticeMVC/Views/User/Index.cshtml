@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var name = "Roman";
+}
+@model ExamPracticeMVC.Models.User;
+
+<h1>User Page</h1>
+
+<p>Name: @ViewData["Name"]</p>
+<p>Name: @name</p>
+
+@using(var form = Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m=>m.FirstName)
+        @Html.TextBoxFor(m=>m.FirstName)
+        @Html.ValidationMessageFor(m=>m.FirstName)
+    </div>
+    <div>
+        @Html.LabelFor(m=>m.LastName)
+        @Html.TextBoxFor(m=>m.LastName)
+        @Html.ValidationMessageFor(m=>m.LastName)
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email"/>
+        @Html.ValidationMessageFor(m=>m.Email)
+    </div>
+
+    <input type="submit" value="Submit"/>
+}
+<form asp-controller="User" asp-action="GetUser">
+    <div>
+        @Html.LabelFor(m=>m.FirstName)
+        @Html.TextBoxFor(m=>m.FirstName)
+        @Html.ValidationMessageFor(m=>m.FirstName)
+    </div>
+    <div>
+        @Html.LabelFor(m=>m.LastName)
+        @Html.TextBoxFor(m=>m.LastName)
+        @Html.ValidationMessageFor(m=>m.LastName)
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email"/>
+        @Html.ValidationMessageFor(m=>m.Email)
+    </div>
+
+    <input type="submit" value="Submit"/>
+</form>
