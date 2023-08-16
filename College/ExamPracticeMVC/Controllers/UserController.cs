@@ -44,7 +44,7 @@ namespace ExamPracticeMVC.Controllers
 
         public IActionResult ReadUser()
         {
-            string connStr = "Data Source=localhost;Initial Catalog=college_dotnet_exam;User ID=root;Password=";
+/*            string connStr = "Data Source=localhost;Initial Catalog=college_dotnet_exam;User ID=root;Password=";
             SqlConnection conn = new SqlConnection(connStr);
 
             string sql = "INSERT INTO user values ('roman', 'ojha', 'razz@gmail.com')";
@@ -52,7 +52,7 @@ namespace ExamPracticeMVC.Controllers
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
-
+*/
             return Redirect("/User");
         }
     }
