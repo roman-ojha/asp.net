@@ -1,0 +1,36 @@
+﻿@page
+@model Question2.Pages.JQueryModel
+@{
+}
+
+<form>
+    <label>Username: </label>
+    <input type="text" id="username"/>
+    <br/>
+    <label>Password: </label>
+    <input type="password" id="password"/>
+    <br/>
+    <input type="button" id="submit" value="Submit"/>
+</form>
+<script href="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $("form[name='myvalidation']").validate({
+            // $("#form").validate({
+            rules: {
+                txtUser: "required",
+                txtPass: "required",
+            },
+            messages: {
+                txtUser: "Username is requried",
+                txtPass: "Password is required",
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+    })
+
+
+</script>
